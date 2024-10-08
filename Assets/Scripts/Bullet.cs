@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb.velocity = gameObject.transform.forward * 20;
+        Destroy(gameObject, 30f);
     }
 
     private void OnCollisionEnter(Collision collision)
