@@ -22,7 +22,9 @@ public class Invader : MonoBehaviour
 
     private void Look()
     {
-        // Look at player
+        Vector3 lookDir = transform.position - playerCam.transform.position;
+        lookDir.y = 0;
+        transform.rotation = Quaternion.LookRotation(lookDir);
     }
 
     private void Update()

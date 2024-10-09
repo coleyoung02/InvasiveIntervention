@@ -30,19 +30,19 @@ public class PlayerControls : MonoBehaviour
 
         // replace the falses with input checks for W, A, S, D
         // try to figure out for yourself which is which, note that x is left and right, and z is back and forth
-        if (false)
+        if (Input.GetKey(KeyCode.W))
         {
             forceDir += new Vector3((transform.forward).x, 0, (transform.forward).z);
         }
-        if (false)
+        if (Input.GetKey(KeyCode.S))
         {
             forceDir += new Vector3((-transform.forward).x, 0, (-transform.forward).z);
         }
-        if (false)
+        if (Input.GetKey(KeyCode.D))
         {
             forceDir += new Vector3((transform.right).x, 0, (transform.right).z);
         }
-        if (false)
+        if (Input.GetKey(KeyCode.A))
         {
             forceDir += new Vector3((-transform.right).x, 0, (-transform.right).z);
         }

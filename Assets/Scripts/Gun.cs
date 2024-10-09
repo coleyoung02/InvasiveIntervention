@@ -67,7 +67,7 @@ public class Gun : MonoBehaviour
         gunObject.transform.localRotation = Quaternion.Euler(xRot, r.y, zRot);
 
         // check for a mouse click
-        if (false)
+        if (Input.GetMouseButtonDown(0))
         {
             if (currentBullets > 0)
             {
